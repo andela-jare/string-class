@@ -1,0 +1,40 @@
+{
+  "name": "string-class",
+  "version": "1.0.0",
+  "description": "An application that extends the String class and adds more string manipulation features",
+  "main": "string.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.15",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "istanbul": "^0.4.5"
+  },
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./test/*.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-jare/string-class.git"
+  },
+  "keywords": [
+    "string",
+    "javascript",
+    "prototype",
+    "regex"
+  ],
+  "author": "Jorg Are",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-jare/string-class/issues"
+  },
+  "homepage": "https://github.com/andela-jare/string-class#readme"
+}
